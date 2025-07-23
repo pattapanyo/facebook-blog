@@ -2,3 +2,9 @@
 layout: home
 author_profile: true
 ---
+
+{% for post in site.posts %}
+  <h3>{{ post.caption }}</h3>
+  <img src="{{ post.ImageUrl }}" width="300">
+  <p>Views: {{ post.impressions }}</p>
+{% endfor %}
